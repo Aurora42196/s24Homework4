@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C15C1B262BF3F49B00C18BF5 /* evenlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C15C1B252BF3F49B00C18BF5 /* evenlist.cpp */; };
+		C15C1B2F2BF4188F00C18BF5 /* evenvector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C15C1B2C2BF4157300C18BF5 /* evenvector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		C15C1B222BF3F49B00C18BF5 /* s24Homework4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = s24Homework4; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15C1B252BF3F49B00C18BF5 /* evenlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evenlist.cpp; sourceTree = "<group>"; };
+		C15C1B2C2BF4157300C18BF5 /* evenvector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evenvector.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				C15C1B252BF3F49B00C18BF5 /* evenlist.cpp */,
+				C15C1B2C2BF4157300C18BF5 /* evenvector.cpp */,
 			);
 			path = s24Homework4;
 			sourceTree = "<group>";
@@ -119,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15C1B262BF3F49B00C18BF5 /* evenlist.cpp in Sources */,
+				C15C1B2F2BF4188F00C18BF5 /* evenvector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

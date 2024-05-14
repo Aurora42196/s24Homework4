@@ -17,6 +17,8 @@ using namespace std;
 // the same as in the original list.
 void removeEven(list<int>& li)
 {
+    if(li.empty())
+        return;
     for (list<int>::iterator p = li.begin(); p != li.end();)
     {
 //        cerr << "iterator p points to: " << *p << endl;
