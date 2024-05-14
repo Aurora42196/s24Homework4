@@ -17,12 +17,19 @@ using namespace std;
 // the same as in the original list.
 void removeEven(list<int>& li)
 {
-    for (list<int>::iterator p = li.begin(); p != li.end(); p++)
+    for (list<int>::iterator p = li.begin(); p != li.end();)
     {
+//        cerr << "iterator p points to: " << *p << endl;
         if(*p % 2 == 0)
         {
-            li.erase(p);
-            p--;
+//            cerr << *p << " will be erased" << endl;
+            p = li.erase(p); // the iterator gets reassigned to the node after the one that gets erased
+//            cerr << "p now points to: " << *p << endl;
+        }
+        else // We only want to increment the iterator is the value is odd
+        {
+//            cerr << *p << " is odd" << endl;
+            p++;
         }
     }
 }
