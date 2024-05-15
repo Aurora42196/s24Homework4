@@ -27,7 +27,7 @@
 		C15C1B252BF3F49B00C18BF5 /* evenlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evenlist.cpp; sourceTree = "<group>"; };
 		C15C1B2C2BF4157300C18BF5 /* evenvector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evenvector.cpp; sourceTree = "<group>"; };
 		C15C1B302BF42DE900C18BF5 /* badlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = badlist.cpp; sourceTree = "<group>"; };
-		C15C1B322BF434D500C18BF5 /* badvector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = badvector.cpp; sourceTree = SOURCE_ROOT; };
+		C15C1B322BF434D500C18BF5 /* badvector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = badvector.cpp; path = s24Homework4/badvector.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
