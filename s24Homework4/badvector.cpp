@@ -32,7 +32,7 @@ void removeBad(vector<Restaurant*>& v)
     {
         if((*p)->stars() <= 2)
         {
-            cerr << (*p)->stars() << " star Restaurant will be deleted!" << endl;
+//            cerr << (*p)->stars() << " star Restaurant will be deleted!" << endl;
             delete *p;
             p = v.erase(p);
         }
