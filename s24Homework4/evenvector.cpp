@@ -14,35 +14,35 @@ using namespace std;
 // Remove the even integers from v.
 // It is acceptable if the order of the remaining even integers is not
 // the same as in the original vector.
-/// This implementaion uses an iterator
-///        for (vector<int>::iterator p = v.begin(); p != v.end();)
-///        {
-///            cerr << "iterator p points to: " << *p << endl;
-///
-///            if(*p % 2 == 0)
-///            {
-///                p = v.erase(p);
-///            }
-///            else
-///                p++;
-///        }
 
 void removeEven(vector<int>& v)
 {
-    if (v.empty())
-        return;
+    //    if (v.empty())
+    //        return;
+    //
+    ///// This implementation uses array arithmetic
+    //    for (size_t i = 0; i < v.size() ;)
+    //    {
+    //        if(v[i] % 2 == 0)
+    //        {
+    //            v.erase(v.begin() + i);
+    //        }
+    //        else // we only iterate if the vector element value is odd
+    //        {
+    //            i++;
+    //        }
+    //    }
     
-/// This implementation uses array arithmetic
-    for (size_t i = 0; i < v.size() ;)
+/// This implementaion uses an iterator
+    for (vector<int>::iterator p = v.begin(); p != v.end();)
     {
-        if(v[i] % 2 == 0)
+//        cerr << "iterator p points to: " << *p << endl;
+        if(*p % 2 == 0)
         {
-            v.erase(v.begin() + i);
+            p = v.erase(p);
         }
-        else // we only iterate if the vector element value is odd
-        {
-            i++;
-        }
+        else
+            p++;
     }
 }
 

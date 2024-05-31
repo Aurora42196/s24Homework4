@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C15C1B352BF4388F00C18BF5 /* hw4p1e.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C15C1B342BF4388F00C18BF5 /* hw4p1e.cpp */; };
+		C1B28A042C0A3B9F001F5163 /* Set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1B28A022C0A3B9F001F5163 /* Set.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,9 @@
 		C15C1B2C2BF4157300C18BF5 /* evenvector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = evenvector.cpp; sourceTree = "<group>"; };
 		C15C1B302BF42DE900C18BF5 /* badlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = badlist.cpp; sourceTree = "<group>"; };
 		C15C1B322BF434D500C18BF5 /* badvector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = badvector.cpp; path = s24Homework4/badvector.cpp; sourceTree = SOURCE_ROOT; };
-		C15C1B342BF4388F00C18BF5 /* hw4p1e.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hw4p1e.cpp; sourceTree = SOURCE_ROOT; };
+		C15C1B342BF4388F00C18BF5 /* hw4p1e.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = hw4p1e.cpp; path = s24Homework4/hw4p1e.cpp; sourceTree = SOURCE_ROOT; };
+		C1B28A022C0A3B9F001F5163 /* Set.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Set.cpp; path = s24Homework4/Set.cpp; sourceTree = SOURCE_ROOT; };
+		C1B28A032C0A3B9F001F5163 /* Set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Set.h; path = s24Homework4/Set.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,13 @@
 		C15C1B242BF3F49B00C18BF5 /* s24Homework4 */ = {
 			isa = PBXGroup;
 			children = (
-				C15C1B342BF4388F00C18BF5 /* hw4p1e.cpp */,
+				C1B28A022C0A3B9F001F5163 /* Set.cpp */,
+				C1B28A032C0A3B9F001F5163 /* Set.h */,
 				C15C1B322BF434D500C18BF5 /* badvector.cpp */,
 				C15C1B302BF42DE900C18BF5 /* badlist.cpp */,
 				C15C1B252BF3F49B00C18BF5 /* evenlist.cpp */,
 				C15C1B2C2BF4157300C18BF5 /* evenvector.cpp */,
+				C15C1B342BF4388F00C18BF5 /* hw4p1e.cpp */,
 			);
 			path = s24Homework4;
 			sourceTree = "<group>";
@@ -127,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15C1B352BF4388F00C18BF5 /* hw4p1e.cpp in Sources */,
+				C1B28A042C0A3B9F001F5163 /* Set.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
