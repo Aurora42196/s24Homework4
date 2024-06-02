@@ -82,44 +82,28 @@
 //        cout << "Failed test 3" << endl;
 //}
 
-#include "Set.h"
-#include <iostream>
+#include "Set.h"  // class template from problem 2
 #include <string>
-#include <cassert>
 using namespace std;
 
-void test()
+class Coord
 {
-    Set<int> si;
-    Set<string> ss;
-    assert(si.empty());
-    assert(ss.empty());
-    assert(si.size() == 0);
-    assert(ss.size() == 0);
-    assert(si.insert(10));
-    assert(ss.insert("hello"));
-    assert(si.contains(10));
-    assert(ss.contains("hello"));
-    int i;
-    assert(si.get(0, i)  &&  i == 10);
-    string s;
-    assert(ss.get(0, s)  &&  s == "hello");
-    assert(si.erase(10));
-    assert(ss.erase("hello"));
-    Set<int> si2(si);
-    Set<string> ss2(ss);
-    si.swap(si2);
-    ss.swap(ss2);
-    si = si2;
-    ss = ss2;
-    unite(si,si2,si);
-    unite(ss,ss2,ss);
-    inOnlyOne(si,si2,si);
-    inOnlyOne(ss,ss2,ss);
-}
+public:
+    Coord(int rr, int cc) : m_row(rr), m_col(cc) {}
+    Coord() : m_row(0), m_col(0) {}
+    double r() const { return m_row; }
+    double c() const { return m_col; }
+private:
+    double m_row;
+    double m_col;
+};
 
 int main()
 {
-    test();
-    cout << "Passed all tests" << endl;
+    Set<int> si;
+    si.insert(21);              // OK
+    Set<string> ss;
+    ss.insert("21 Savage");     // OK
+    Set<Coord> sc;
+//    sc.insert(Coord(21, -21));  // error!
 }
