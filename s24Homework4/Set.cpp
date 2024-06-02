@@ -1,8 +1,2 @@
-//
-//  Set.cpp
-//  s24Homework4
-//
-//  Created by Cameron Maiden on 5/31/24.
-//
+// Set.cpp
 
-#include "Set.h"
