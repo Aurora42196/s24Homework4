@@ -22,7 +22,7 @@ using namespace std;
 //  you're sorting so many items that insertion_sort would take more time
 //  than you're willing to wait.
 
-const bool TEST_INSERTION_SORT = true;
+const bool TEST_INSERTION_SORT = false;
 
 //========================================================================
 
@@ -135,14 +135,13 @@ void insertion_sort(vector<Student>& s, bool comp(const Student&, const Student&
     {
         Student nextItem = s[unsorted];
         size_t loc = unsorted;
-        while (loc > 0  &&  comp(s[loc-1], nextItem))
+        while (loc > 0  &&  comp(nextItem, s[loc-1]))
         {
             s[loc] = s[loc-1];
             loc--;
         }
         s[loc] = nextItem;
     }
-
     // Just to show you how to use the second parameter, we'll write code
     // that sorts only a vector of 2 elements.  (This is *not* the
     // insertion sort algorithm.)
